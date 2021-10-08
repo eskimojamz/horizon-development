@@ -1,38 +1,178 @@
-.App {
-  text-align: center;
+:root {
+  --primary: rgba(255, 85, 85, 1);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.cabin {
+  font-family: 'Cabin', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.primary {
+  color: var(--primary);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home-desktop {
+  background-color: var(--white);
+  height: auto;
+  width: 100vw;
+}
+
+.navbar {
+  z-index: 3;
+  position: sticky;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+/* .page-container {
+  max-width:
+} */
+
+.logo-container {
+  display: flex;
+}
+
+.logo {
+  align-self: center;
+}
+
+/* .logo-img {
+
+} */
+
+.company-title {
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo-line {
+  margin: 0 1rem;
+}
+
+.nav-links {
+  display: flex;
   align-items: center;
+}
+
+.navlink {
+  margin: 0 1rem;
+  font-size: 18px;
+}
+
+.phone-link {
+  display: flex;
+  align-items: center;
+}
+
+.phone-icon {
+  height: 24px;
+  width: 24px;
+  margin-right: 0.25rem;
+}
+
+.phone-number {
+  color: var(--primary);
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  height: auto;
+  width: 100vw;
+  /* padding: 77.3px 97px; */
+  background: radial-gradient(50% 50% at 50% 50%, rgba(255, 233, 191, 0.9) 0%, rgba(255, 232, 188, 0.135) 96.35%);
+}
+
+.hero {
+  margin-top: 15rem;
+  padding: 0 2rem;
+  display: flex;
+}
+
+  .overlap-group1 {
+    display: flex;
+    height: auto;
+    margin: 0 auto;
+  }
+
+    .hero-img-1 {
+      border-radius: 15px;
+    }
+
+    .overlap-group2 {
+      z-index: 2;
+      position: absolute;
+      top: 12rem;
+      left: 26.75rem;
+    }
+
+      .hero-img-2 {
+        border-radius: 15px;
+      }
+
+  .hero-text {
+    margin: 0 auto;
+  }
+    .hero-text-primary {
+      text-align: center;
+      font-size: 24px;
+      line-height: 3.15rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+      .hero-text-primary h1 {
+        margin: 0;
+      }
+    .hero-text-secondary {
+      text-align: center;
+      font-size: 14px;
+      margin-bottom: 1rem;
+    }
+    .hero-btn {
+      display: flex;
+      justify-content: center;
+    }
+      .learn-more {
+        background-color: var(--primary);
+        border-radius: 5px;
+        border: none;
+        height: 30px;
+        padding: 0 0.5rem;
+        font-size: 16px;
+        font-weight: 700;
+        color: white;
+      }
+
+
+
+
+
+
+body, button {
+  font-family: 'Secular One', sans-serif;
+}
+
+.screen a {
+  display: contents;
+  text-decoration: none;
+}
+
+.container-center-horizontal {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  pointer-events: none;
+  height: 100vh;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container-center-horizontal > * {
+  flex-shrink: 0;
+  pointer-events: auto;
 }
